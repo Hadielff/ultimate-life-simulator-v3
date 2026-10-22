@@ -1,0 +1,37 @@
+ULTIMATE LIFE SIMULATOR — BEYOND REALITY · ATUALIZAÇÃO V3
+
+ARQUIVOS
+- index.html: jogo, interface e sistemas locais.
+- service-worker.js: cache offline atualizado para v3.
+- manifest.webmanifest e ícones SVG: identidade instalável do PWA.
+
+NOVIDADES DESTA ATUALIZAÇÃO
+- Modo Realista e modo Fantasia selecionáveis ao criar uma vida. O modo Fantasia inclui origem sobrenatural, afinidade e essência simulada; o modo Realista não recebe esses sistemas.
+- Criador visual leve com retrato vetorial local, 50 opções de penteado, cores de cabelo, pele e olhos, formato dos olhos, roupas e acessórios.
+- Moradia com custos simulados e validação do dinheiro disponível.
+- Rotinas de estudo, movimento, criação, vida social, voluntariado e descanso com efeitos em atributos e histórico.
+- Viagens/mudanças com custos e alteração da localização.
+- Metas pessoais, agenda de compromissos e notificações persistentes.
+- Consequências numéricas ocultadas nas descrições de escolhas, preservando o resultado aplicado pelo jogo.
+- Migração tolerante de salvamentos antigos para novos campos, sem alterar a chave de salvamento existente.
+- Cache do service worker atualizado para solicitar a nova versão.
+
+COMO PUBLICAR NO GITHUB PAGES
+1. Faça uma cópia dos arquivos atuais do repositório.
+2. Substitua index.html e service-worker.js pelos arquivos deste pacote.
+3. Mantenha manifest.webmanifest, icon-192.svg e icon-512.svg, que continuam compatíveis.
+4. Faça Commit changes e abra o site publicado com internet.
+5. Se a versão antiga continuar aparecendo, feche o app instalado e abra o site no Chrome com internet para atualizar o cache.
+
+SALVAMENTO E COMPATIBILIDADE
+- A chave localStorage `ulsbr_save` foi preservada.
+- As novas propriedades recebem valores padrão ao carregar vidas anteriores.
+- O jogo salva no armazenamento local do navegador/aparelho; não é sincronização em nuvem. Não limpe os dados do Chrome sem exportar ou preservar seu progresso.
+
+OFFLINE
+O service worker tenta guardar o app shell depois de uma visita online. A disponibilidade offline depende de o navegador permitir service workers e de o primeiro carregamento online ter sido concluído. Confirme no próprio aparelho.
+
+LIMITES IMPORTANTES
+Esta é uma atualização funcional e integrada, mas não implementa individualmente todas as dezenas de ideias planejadas. O retrato é uma ilustração vetorial estilizada, não uma coleção de fotografias ou de rostos humanos fotorrealistas; as 50 opções são escolhas de penteado, e o renderizador combina silhuetas. Viagens, custos, carreiras e efeitos são simulações narrativas, não serviços reais. O modo Fantasia atual é uma base de sistema e não contém ainda uma campanha sobrenatural extensa. Os recursos precisam ser validados no Chrome Android e no GitHub Pages após publicação.
+
+Projeto independente e original. Não afiliado a BitLife ou Celebrity Hunter.
